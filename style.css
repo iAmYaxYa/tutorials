@@ -1,0 +1,160 @@
+/* FONT FAMILY LINK  */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+:root {
+    --primaryColor: #00ADB5;
+    --secondaryColor: #393E46;
+}
+
+/* CUSTOM CSS  */
+.align-element {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* NAVBAR */
+.navbar {
+    height: 80px;
+    width: 100%;
+    background: #222831;
+    border: 1px solid var(--secondaryColor);
+}
+
+.navbar .align-element {
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .align-element .logo {
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .align-element .links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .align-element .links li {
+    list-style: none;
+}
+
+.navbar .align-element .links li a {
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    color: #fff;
+    padding: 0 20px;
+    letter-spacing: .8px;
+    transition: color .3s ease-in-out;
+}
+
+.navbar .align-element .links li a:hover {
+    color: var(--primaryColor);
+}
+
+/* HERO STYLES */
+.hero {
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: url('img/banner-bg.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.hero .align-element {
+    padding-bottom: 100px;
+    padding-left: 70px;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 70px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1;
+}
+
+.hero h1 span {
+    color: var(--primaryColor);
+}
+
+.hero .buttons {
+    display: flex;
+    margin-top: 50px;
+    gap: 10px;
+}
+
+.hero .buttons .btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    background: var(--primaryColor);
+    border-radius: 30px;
+    color: #fff;
+    height: 42px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.hero .buttons .btn:last-child {
+    background: var(--secondaryColor);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero .buttons .btn:last-child i {
+    font-size: 20px;
+    color: #fff;
+}
+
+.hero .hero-icon {
+    position: absolute;
+    content: '';
+    height: 50px;
+    width: 50px;
+    background: var(--secondaryColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 85%;
+    left: calc(32% - 50px);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.hero .hero-icon i {
+    font-size: 30px;
+    color: #fff;
+}
+
+/* VERTICAL LINE  */
+.hero::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 1px;
+    background: var(--secondaryColor);
+    left: 30%;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
