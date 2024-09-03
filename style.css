@@ -1,0 +1,179 @@
+/* FONT FAMILY LINK  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --primaryColor: #EA6D27;
+    --secondaryColor: #101A24;
+}
+
+/* CUSTOM CSS  */
+.btn-primary {
+    border: none;
+    background: var(--primaryColor);
+    font-size: 18px;
+    font-weight: 500;
+    height: 42px;
+    padding: 0 15px;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+
+/* NAVBAR STYLE  */
+.navbar {
+    height: 80px;
+    width: 100%;
+}
+
+.navbar .max-width {
+    height: 100%;
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: end;
+    text-decoration: none;
+    gap: 2px;
+}
+
+.navbar .logo i {
+    font-size: 40px;
+    color: var(--primaryColor);
+}
+
+.navbar .logo span {
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+}
+
+.navbar .links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .links li {
+    list-style: none;
+}
+
+.navbar .links li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #000;
+    padding: 0 20px;
+    letter-spacing: .8px;
+    transition: color .3s ease-in-out;
+}
+
+.navbar .links li a:hover {
+    color: var(--primaryColor);
+}
+
+
+/* HERO STYLES */
+.hero {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.hero .text,
+.hero .img {
+    flex-basis: 50%;
+}
+
+.hero .text {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero .text h1 {
+    font-size: 60px;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1;
+}
+
+.hero .text p {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.hero .text .buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.hero .text .buttons .btn-primary:first-child {
+    background: var(--secondaryColor);
+}
+
+.hero .text .icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.hero .text .icons li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border: 1px solid #a1a1a1;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.hero .text .icons li i {
+    font-size: 20px;
+    color: #000;
+}
+
+.hero .img {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    position: relative;
+}
+
+.hero .img img {
+    width: 600px;
+    height: 600px;
+    object-fit: contain;
+    border-bottom-left-radius: 60%;
+    border-bottom-right-radius: 40%;
+}
+
+.hero .img::after {
+    position: absolute;
+    content: '';
+    width: 400px;
+    height: 400px;
+    right: 50%;
+    bottom: 50%;
+    top: 62%;
+    left: 57%;
+    background: var(--primaryColor);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: -1;
+}
