@@ -1,0 +1,135 @@
+/* FONT FAMILY LINK  */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+/* CUSTOM CSS  */
+button {
+    border: none;
+    background: #605dba;
+    font-size: 18px;
+    font-weight: 500;
+    height: 50px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+    transition: transform .3s ease-in-out;
+}
+
+button:hover {
+    transform: translateY(-7px);
+}
+
+/* NAVBAR STYLES  */
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100px;
+    width: 100%;
+}
+
+.navbar .max-width {
+    width: 85%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .max-width .links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .max-width .links li {
+    list-style: none;
+}
+
+.navbar .max-width .links li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 600;
+    padding: 0 20px;
+    color: rgba(52, 63, 82, 0.7);
+    transition: color .3s ease-in-out;
+}
+
+.navbar .max-width .links li a:hover {
+    color: #000;
+}
+
+
+/* HERO STYLES  */
+.hero {
+    min-height: 100vh;
+    width: 100%;
+    background: url('img/bg.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.hero h1,
+.hero h2 {
+    font-size: 60px;
+    line-height: 1;
+    color: rgba(52, 63, 82, 0.8);
+}
+
+.hero h2 {
+    color: rgb(96, 93, 186);
+}
+
+.hero p {
+    margin: 40px 0;
+    font-size: 23px;
+    width: 50%;
+    text-align: center;
+    color: #60697b;
+}
+
+.hero .buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero .buttons button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.hero .buttons button i {
+    font-size: 22px;
+    color: #fff;
+}
+
+.hero .buttons button:first-child i {
+    transform: rotate(30deg);
+}
+
+.hero .buttons button:last-child i {
+    transform: rotate(-30deg);
+}
+
+.hero .buttons button:last-child {
+    background: #e668b3;
+}
