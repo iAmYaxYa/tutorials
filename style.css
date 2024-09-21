@@ -1,0 +1,157 @@
+/* FONT FAMILY LINK  */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+/* CUSTOM CSS  */
+.align-element {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.primary-btn {
+    background: #d99b5c;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 40px;
+    text-transform: uppercase;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 8px;
+    letter-spacing: .8px;
+    cursor: pointer;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+.primary-btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* NAVBAR STYLES  */
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100px;
+    width: 100%;
+}
+
+.navbar .align-element {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.navbar .align-element .logo img {
+    width: 180px;
+    filter: invert(1);
+}
+
+.navbar .align-element .links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .align-element .links li {
+    list-style: none;
+}
+
+.navbar .align-element .links li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: .8px;
+    padding: 0 10px;
+}
+
+.navbar .align-element .icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar .align-element .icons span i {
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.navbar .align-element .icons .cart {
+    position: relative;
+}
+
+.navbar .align-element .icons .cart .badge {
+    position: absolute;
+    top: -40%;
+    right: -40%;
+    background: #d99b5c;
+    color: #fff;
+    width: 18px;
+    height: 18px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+
+
+/* HERO STYLES  */
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.6)), url('img/bg.webp');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.hero h1 {
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 1;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 25px 0;
+    color: #fff;
+    font-family: sans-serif;
+    width: 50%;
+}
+
+.hero .buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero .buttons .primary-btn:last-child {
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+.hero .buttons .primary-btn:last-child:hover {
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
