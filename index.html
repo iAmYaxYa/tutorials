@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <!-- Box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form autocomplete="off">
+        <h2>Sign up</h2>
+        <!-- USERNAME  -->
+        <div class="input-box">
+          <input type="text" placeholder="User name" id="user-name" />
+          <!-- SUCCESS SPAN  -->
+          <span class="success username">
+            <i class="fa-sharp fa-solid fa-circle-check"></i>
+          </span>
+          <br />
+          <!-- ERROR SPAN  -->
+          <span class="error username"></span>
+        </div>
+        <!-- EMAIL  -->
+        <div class="input-box">
+          <input type="email" placeholder="Enter you email" id="email" />
+          <!-- SUCCESS SPAN  -->
+          <span class="success email">
+            <i class="fa-sharp fa-solid fa-circle-check"></i>
+          </span>
+          <br />
+          <!-- ERROR SPAN  -->
+          <span class="error email"></span>
+        </div>
+        <!-- PASSWORD  -->
+        <div class="input-box">
+          <input type="password" placeholder="Create password" id="password" />
+          <!-- EYE SPAN  -->
+          <span class="eye">
+            <i class="fa-regular fa-eye-slash"></i>
+          </span>
+          <br />
+          <!-- ERROR SPAN  -->
+          <span class="error password"></span>
+        </div>
+        <!-- CONFIRM PASSWORD  -->
+        <div class="input-box">
+          <input
+            type="password"
+            placeholder="Confirm password"
+            id="confirm-pass"
+          />
+          <!-- EYE SPAN  -->
+          <span class="eye">
+            <i class="fa-regular fa-eye-slash"></i>
+          </span>
+          <br />
+          <!-- ERROR SPAN  -->
+          <span class="error confirm-pass"></span>
+        </div>
+        <!-- SUBMIT BTN  -->
+        <div class="btn">
+          <button type="submit" id="btn">Create</button>
+        </div>
+      </form>
+    </div>
+    <!-- SCRIPT JS LINKS  -->
+    <script src="script.js"></script>
+  </body>
+</html>
